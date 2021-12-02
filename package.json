@@ -1,0 +1,23 @@
+{
+  "name": "bookshelf",
+  "version": "1.0.0",
+  "description": "Our web site is named Bookshelf. Bookshelf is a website, where people can add and share their reviews about books and movies.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annahuhtanen/bookshelf.git"
+  },
+  "keywords": [
+    "books",
+    "movies"
+  ],
+  "author": "Alina Crismaru, Anna Huhtanen, Janita Anttonen, Juuso Nieminen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annahuhtanen/bookshelf/issues"
+  },
+  "homepage": "https://github.com/annahuhtanen/bookshelf#readme"
+}

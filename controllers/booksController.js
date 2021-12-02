@@ -4,7 +4,10 @@ const Book = require("../models/book"),
   getBookParams = body => {
     return {
       title: body.title,
-      author: body.author,
+      author: {
+        first: body.first,
+        last: body.last
+      },
       genre: body.genre,
       publishYear: body.publishYear,
       description: body.description

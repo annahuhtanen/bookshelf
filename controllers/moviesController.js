@@ -4,7 +4,10 @@ const Movie = require("../models/movie"),
   getMovieParams = body => {
     return {
       title: body.title,
-      director: body.director,
+      director: { 
+        first: body.first,
+        last: body.last
+      },
       genre: body.genre,
       releaseYear: body.releaseYear,
       description: body.description

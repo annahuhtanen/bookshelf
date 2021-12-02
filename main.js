@@ -9,13 +9,13 @@ const express = require("express"),
     usersController = require("./controllers/usersController"),
     booksController = require("./controllers/booksController"),
     moviesController = require("./controllers/moviesController")
-    
+
 
 mongoose.Promise = global.Promise;
 
 mongoose.connect(
     "mongodb://localhost:27017/bookshelf",
-      { useNewUrlParser: true }
+    { useNewUrlParser: true }
 );
 mongoose.set("useCreateIndex", true);
 
@@ -31,15 +31,15 @@ app.set("view engine", "ejs");
 router.use(express.static("public"));
 router.use(layouts);
 router.use(
-  express.urlencoded({
-    extended: false
-  })
+    express.urlencoded({
+        extended: false
+    })
 );
 
 router.use(
-  methodOverride("_method", {
-    methods: ["POST", "GET"]
-  })
+    methodOverride("_method", {
+        methods: ["POST", "GET"]
+    })
 );
 
 router.use(express.json());
@@ -80,5 +80,5 @@ router.use(errorController.respondInternalError);
 app.use("/", router);
 
 app.listen(app.get("port"), () => {
-  console.log(`Server running at http://localhost:${app.get("port")}`);
+    console.log(`Server running at http://localhost:${app.get("port")}`);
 });

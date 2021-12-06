@@ -1,5 +1,7 @@
 "use strict";
 
+//moviescontroller
+
 const Movie = require("../models/movie"),
   getMovieParams = body => {
     return {

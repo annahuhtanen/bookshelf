@@ -4,7 +4,8 @@
   "description": "Our web site is named Bookshelf. Bookshelf is a website, where people can add and share their reviews about books and movies.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/annahuhtanen/bookshelf/issues"
   },
-  "homepage": "https://github.com/annahuhtanen/bookshelf#readme"
+  "homepage": "https://github.com/annahuhtanen/bookshelf#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.0.14"
+  }
 }

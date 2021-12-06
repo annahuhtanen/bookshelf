@@ -7,6 +7,7 @@ const express = require("express"),
     errorController = require("./controllers/errorController"),
     homeController = require("./controllers/homeController"),
     usersController = require("./controllers/usersController"),
+    subscribersController = require("./contollers/subscribersController"),
     booksController = require("./controllers/booksController"),
     moviesController = require("./controllers/moviesController")
 

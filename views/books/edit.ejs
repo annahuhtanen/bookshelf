@@ -1,0 +1,12 @@
+<div class="data-form">
+    <form class="form-signin" action="<%=`/books/${book._id}/update?_method=PUT`%>" method="POST">
+      <h2 class="form-signin-heading">Edit Review:</h2>
+      <label for="inputTitle">Title</label>
+      <input type="text" name="title" id="inputTitle" class="form-control" value="<%= book.title %>" placeholder="Title" autofocus>
+      <label for="inputDescription">Description</label>
+      <input type="text" name="description" id="inputDescription" class="form-control" value="<%= book.description %>" placeholder="Description">
+      <label for="inputRating">Rating</label>
+      <input type="text" name="rating" id="inputRating" pattern="\d*" class="form-control" value="<%= book.rating %>" placeholder="Rating" required>
+      <br /><button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+    </form>
+  </div>

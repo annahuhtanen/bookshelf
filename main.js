@@ -96,8 +96,8 @@ router.delete("/movies/:id/delete", moviesController.delete, moviesController.re
 router.get("/movies/:id", moviesController.show, moviesController.showView);
 
 router.use(errorController.logErrors);
-router.use(errorController.respondNoResourceFound);
-router.use(errorController.respondInternalError);
+//router.use(errorController.respondNoResourceFound);
+//router.use(errorController.respondInternalError);
 
 
 app.use("/", router);

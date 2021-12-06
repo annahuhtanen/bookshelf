@@ -57,6 +57,26 @@ router.put("/users/:id/update", usersController.update, usersController.redirect
 router.delete("/users/:id/delete", usersController.delete, usersController.redirectView);
 router.get("/users/:id", usersController.show, usersController.showView);
 
+router.get("/subscribers", subscribersController.index, subscribersController.indexView);
+router.get("/subscribers/new", subscribersController.new);
+router.post(
+    "/subscribers/create",
+    subscribersController.create,
+    subscribersController.redirectView
+);
+router.get("/subscribers/:id/edit", subscribersController.edit);
+router.put(
+    "/subscrivers/:id/update",
+    subscribersController.update,
+    subscribersController.redirectView
+);
+router.delete(
+    "/subscribers/:id/delete",
+    subscribersController.delete,
+    subscribersController.redirectView
+);
+router.get("subscribers/:id", subscribersController.show, subscribersController.showView);
+
 router.get("/books", booksController.index, booksController.indexView);
 router.get("/books/new", booksController.new);
 router.post("/books/create", booksController.create, booksController.redirectView);
@@ -64,6 +84,8 @@ router.get("/books/:id/edit", booksController.edit);
 router.put("/books/:id/update", booksController.update, booksController.redirectView);
 router.delete("/books/:id/delete", booksController.delete, booksController.redirectView);
 router.get("/books/:id", booksController.show, booksController.showView);
+
+router.post("/subscribers/:id", subscribersController.show, subscribersController.showView);
 
 router.get("/movies", moviesController.index, moviesController.indexView);
 router.get("/movies/new", moviesController.new);

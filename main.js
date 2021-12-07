@@ -15,7 +15,7 @@ const express = require("express"),
 mongoose.Promise = global.Promise;
 
 mongoose.connect(
-    "mongodb://localhost:3000/bookshelf",
+    "mongodb://localhost:27017/bookshelf",
     { useNewUrlParser: true }
 );
 mongoose.set("useCreateIndex", true);

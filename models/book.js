@@ -18,7 +18,7 @@ const bookSchema = new mongoose.Schema({
             trim: true,
             required: true
         }
-        
+
 
     },
     genre: {
@@ -37,3 +37,5 @@ const bookSchema = new mongoose.Schema({
     }
 
 });
+
+module.exports = mongoose.model("Book", bookSchema);

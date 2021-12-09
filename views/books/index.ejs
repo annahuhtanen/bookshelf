@@ -8,6 +8,8 @@
       <th>Publish Year</th>
       <th>Description</th>
       <th>Rating</th>
+      <th>Edit</th>
+      <th>Delete</th>
       
       
     </tr>
@@ -30,10 +32,10 @@
         <%= book.publishYear %>
       </td>
       <td>
-        <%= book.rating %>
+        <%= book.description %>
       </td>
       <td>
-        <%= book.description %>
+        <%= book.rating %>
       </td>
       <td>
         <a href="<%=`books/${book._id}/edit`%>">

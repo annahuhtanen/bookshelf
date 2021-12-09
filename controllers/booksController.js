@@ -12,7 +12,8 @@ const Book = require("../models/book"),
       },
       genre: body.genre,
       publishYear: body.publishYear,
-      description: body.description
+      description: body.description,
+      rating: body.rating
     };
   };
 

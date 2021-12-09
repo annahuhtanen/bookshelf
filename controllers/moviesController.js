@@ -12,7 +12,8 @@ const Movie = require("../models/movie"),
       },
       genre: body.genre,
       releaseYear: body.releaseYear,
-      description: body.description
+      description: body.description,
+      rating: body.rating
     };
   };
 

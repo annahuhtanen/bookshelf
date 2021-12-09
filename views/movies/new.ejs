@@ -5,17 +5,22 @@
       <label for="inputTitle">Title</label><br>
       <input type="text" name="title" id="inputTitle" class="form-control" placeholder="Title" autofocus><br><br>
  
-      <label for="inputDescription">Director</label><br>
-      <input type="text" name="director" id="inputDirector" class="form-control" placeholder="Director"><br><br>
+      <label for="inputDirector">Director's first name</label><br>
+      <label for="inputDirector">Director's last name</label><br>
+      <input type="text" name="first" id="inputDirectorFirst" class="form-control" placeholder="First"><br><br>
+      <input type="text" name="last" id="inputDirectorLast" class="form-control" placeholder="Last"><br><br>
  
       <label for="inputRating">Genre</label><br>
       <input type="text" name="genre" id="inputGenre" class="form-control" placeholder="Genre"><br>
  
       <label for="inputDescription">Release Year</label><br>
-      <input type="text" name="release year" id="inputReleaseYear" class="form-control" placeholder="Release Year"><br><br>
+      <input type="text" name="releaseYear" id="inputReleaseYear" class="form-control" placeholder="Release Year"><br><br>
 
       <label for="inputDescription">Description</label><br>
       <input type="text" name="description" id="inputDescription" class="form-control" placeholder="Description"><br><br>
+
+      <label for="inputRating">Rating</label><br>
+      <input type="text" name="rating" id="inputRating" pattern="\d*" class="form-control" placeholder="Rating" required><br>
 
       <br /><button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
     </form>

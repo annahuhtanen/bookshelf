@@ -1,12 +1,27 @@
 <div class="data-form">
     <form class="form-signin" action="<%=`/books/create`%>" method="POST">
       <h2 class="form-signin-heading">Add a new book review:</h2>
+
       <label for="inputTitle">Title</label><br>
       <input type="text" name="title" id="inputTitle" class="form-control" placeholder="Title" autofocus><br><br>
+
+      <label for="inputAuthor">Authors first name</label><br>
+      <label for="inputAuthor">Authors last name</label><br>
+      <input type="text" name="first" id="inputAuthorFirst" class="form-control" placeholder="First"><br><br>
+      <input type="text" name="last" id="inputAuthorLast" class="form-control" placeholder="Last"><br><br>
+
+      <label for="inputGenre">Genre</label><br>
+      <input type="text" name="genre" id="inputGenre" class="form-control" placeholder="Genre"><br><br>
+
+      <label for="inputPublishYear">Publish Year</label><br>
+      <input type="number" name="publishYear" id="inputPublishYear" class="form-control" placeholder="Publish Year"><br><br>
+
       <label for="inputDescription">Description</label><br>
       <input type="text" name="description" id="inputDescription" class="form-control" placeholder="Description"><br><br>
+
       <label for="inputRating">Rating</label><br>
       <input type="text" name="rating" id="inputRating" pattern="\d*" class="form-control" placeholder="Rating" required><br>
+
       <br /><button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
     </form>
   </div>

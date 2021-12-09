@@ -3,8 +3,10 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th>Director</th>
+      <th>Genre</th>
+      <th>Release Year</th>
       <th>Description</th>
-      <th>Rating</th>
       <th>Edit</th>
       <th>Delete</th>
     </tr>
@@ -16,6 +18,15 @@
         <a href="<%= `/movies/${movie._id}` %>">
           <%= movie.title %>
         </a>
+      </td>
+      <td>
+        <%= movie.director %>
+      </td>
+      <td>
+        <%= movie.genre %>
+      </td>
+      <td>
+        <%= movie.releaseYear %>
       </td>
       <td>
         <%= movie.description %>

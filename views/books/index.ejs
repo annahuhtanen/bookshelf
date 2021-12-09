@@ -3,10 +3,13 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th>Author</th>
+      <th>Genre</th>
+      <th>Publish Year</th>
       <th>Description</th>
       <th>Rating</th>
-      <th>Edit</th>
-      <th>Delete</th>
+      
+      
     </tr>
   </thead>
   <tbody>
@@ -16,6 +19,18 @@
         <a href="<%= `/books/${book._id}` %>">
           <%= book.title %>
         </a>
+      </td> 
+      <td>
+        <%= book.author %>
+      </td>
+      <td>
+        <%= book.genre %>
+      </td>
+      <td>
+        <%= book.publishYear %>
+      </td>
+      <td>
+        <%= book.rating %>
       </td>
       <td>
         <%= book.description %>

@@ -27,7 +27,12 @@ body {
   }
   
   a {
-    color: black;
+    color: #3f3d34;
+    text-decoration: none;
+    text-align: center;
+  }
+  td {
+    color: #3f3d34;
     text-decoration: none;
     text-align: center;
   }

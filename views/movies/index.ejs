@@ -21,7 +21,7 @@
         </a>
       </td>
       <td>
-        <%= movie.director %>
+        <%= movie.director.first %> <%= movie.director.last%>
       </td>
       <td>
         <%= movie.genre %>
@@ -33,7 +33,7 @@
         <%= movie.description %>
       </td>
       <td>
-        <%= movie.rating %>
+        <%= movie.rating %><a>/5</a>
       </td>
       <td>
         <a href="<%=`movies/${movie._id}/edit`%>">
